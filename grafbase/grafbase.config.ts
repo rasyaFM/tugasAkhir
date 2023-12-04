@@ -1,4 +1,4 @@
-import { g, auth ,config } from '@grafbase/sdk'
+import { g, config } from '@grafbase/sdk'
 
 const User = g.model('User', {
   id: g.id()
@@ -18,6 +18,6 @@ const Project = g.model('Project', {
 })
 
 export default config({
-  schema: g
+  schema: g,
   
 })
