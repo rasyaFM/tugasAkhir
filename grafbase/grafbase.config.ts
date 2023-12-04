@@ -17,8 +17,6 @@ const Project = g.model('Project', {
   ownBy: g.relation(() => User),
 })
 
-
-
 export default config({
   schema: g
   
