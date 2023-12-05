@@ -1,7 +1,7 @@
 import { g, config } from '@grafbase/sdk'
 
 const User = g.model('User', {
-  id: g.id()
+  id: g.id(),
   name: g.string().length({min:10, max:25}),
   email: g.string().unique(['id']),
   avatarUrl: g.url(),
